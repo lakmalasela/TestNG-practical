@@ -9,12 +9,16 @@ public class SeleniumTestNGExample {
     @Test
     public void launchBrowser() {
         // Set the path to ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "E:/Sem-06/QA/selenium_pract/selenium/chromedriver/chromedriver");
-        System.setProperty("webdriver.chrome.driver", "");
-
-        // Instantiate the WebDriver and open a webpage
-        WebDriver driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver", "C:\\GigaNerds\\Sem-06\\QA\\pract\\TestNG\\TestNG-practical\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "");
+//
+//        // Instantiate the WebDriver and open a webpage
+//        WebDriver driver = new ChromeDriver();
+//        driver.get("https://www.google.com");
+//        driver.quit();
+        WebDriver driver = new ChromeDriver(); // Selenium auto handles driver
         driver.get("https://www.google.com");
         driver.quit();
-    }
+   }
+
 }

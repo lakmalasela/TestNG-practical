@@ -19,13 +19,12 @@ public class TestNGExample {
 
     WebDriver driver;
 
-    @BeforeTest
-    @Parameters("url")
-    public void setUp(String url) {
-        System.setProperty("webdriver.chrome.driver", "E:/Sem-06/QA/selenium_pract/selenium/chromedriver/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.get(url);
-    }
+//    @BeforeTest
+//    @Parameters("url")
+//    public void setUp(String url) {
+//        driver = new ChromeDriver(); // Selenium Manager handles driver
+//        driver.get(url);
+//    }
 
     @Test(dataProvider = "testData")
     public void testWithMultipleData(String input) {
